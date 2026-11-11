@@ -1,0 +1,18 @@
+
+# Backend
+Backend/bin/
+Backend/obj/
+Backend/.vs/
+Backend/*.user
+Backend/*.suo
+Backend/appsettings.Development.json
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.angular/
+Frontend/coverage/
+
+# Environment files
+.env
+.env.*
