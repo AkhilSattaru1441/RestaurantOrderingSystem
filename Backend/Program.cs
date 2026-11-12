@@ -95,6 +95,8 @@ namespace RestaurantOrderingAPI
             }
 
             app.UseHttpsRedirection();
+              app.UseDefaultFiles();
+             app.UseStaticFiles();
 
             app.UseCors("AllowAngular");
 
@@ -102,6 +104,7 @@ namespace RestaurantOrderingAPI
             app.UseAuthorization();
 
             app.MapControllers();
+               app.MapFallbackToFile("index.html");
 
             app.Run();
         }
